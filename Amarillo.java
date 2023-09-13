@@ -1,11 +1,12 @@
 import java.lang.Math;
 
 public class Amarillo extends Pikinim {
-    Amarillo(){
-        this.ataque = 1;
-        this.capacidad = 3;
+    Amarillo(int quantity){
+        this.set_dmg(1);
+        this.set_cap(3);
+        this.set_quan(quantity);
     }
     void multiplicar(int cantidad){
-        this.cantidad += (int)Math.ceil(cantidad * 1.5);
+        this.set_quan(this.get_quan() + (int)Math.ceil(cantidad * 1.5));
     }
 }

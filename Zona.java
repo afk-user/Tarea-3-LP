@@ -8,3 +8,4 @@ class Zona {
     void Interactuar(Pikinim yel_pik,Pikinim cyan_pik,Pikinim mag_pik){
         return;
     }
+}
