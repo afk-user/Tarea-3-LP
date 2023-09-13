@@ -1,0 +1,3 @@
+class Muralla extends Zona {
+
+}
