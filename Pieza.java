@@ -1,3 +1,10 @@
 class Pieza extends Zona {
-    int peso;
+    private int peso;
+
+    Pieza(int num){
+        this.peso = num;
+    }
+    int get_weight(){
+        return this.peso;
+    }
 }

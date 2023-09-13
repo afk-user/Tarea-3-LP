@@ -4,6 +4,6 @@ class Magenta extends Pikinim {
         this.capacidad = 1;
     }
     void multiplicar(int cantidad){
-        this.cantidad = cantidad * this.ataque;
+        this.cantidad += cantidad * this.ataque;
     }
 }

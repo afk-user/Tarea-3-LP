@@ -1,4 +1,4 @@
-class Pikinim {
+abstract class Pikinim {
     protected int ataque;
     protected int capacidad;
     protected int cantidad;
@@ -6,5 +6,5 @@ class Pikinim {
     void disminuir(int cantidad){
         this.cantidad -= cantidad;
     }
-    void multiplicar(int cantidad){}
+    abstract void multiplicar(int cantidad);
 }

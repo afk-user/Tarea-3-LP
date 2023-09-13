@@ -1,5 +1,10 @@
+interface ILevantable {
+    void Levantar(Pikinim yel_pik,Pikinim cyan_pik,Pikinim mag_pik);
+}
+
 class Zona {
     protected boolean usado;
-    
-    void Interactuar(Pikinim aPikinim, Pikinim cPikinim, Pikinim mPikinim){}
-}
+
+    void Interactuar(Pikinim yel_pik,Pikinim cyan_pik,Pikinim mag_pik){
+        return;
+    }

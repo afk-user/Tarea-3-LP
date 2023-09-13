@@ -6,6 +6,6 @@ public class Amarillo extends Pikinim {
         this.capacidad = 3;
     }
     void multiplicar(int cantidad){
-        this.cantidad = (int)Math.ceil(cantidad * 1.5);
+        this.cantidad += (int)Math.ceil(cantidad * 1.5);
     }
 }

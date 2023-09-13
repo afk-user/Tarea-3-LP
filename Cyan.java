@@ -4,6 +4,6 @@ class Cyan extends Pikinim {
         this.capacidad = 1;
     }
     void multiplicar(int cantidad){
-        this.cantidad = cantidad * 3;
+        this.cantidad += cantidad * 3;
     }
 }
