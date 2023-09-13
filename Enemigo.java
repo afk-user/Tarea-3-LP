@@ -8,4 +8,9 @@ class Enemigo extends Zona implements ILevantable {
             // hacer elegir al jugador que color de pikmin quiere multiplicar
         }
     }
+    boolean Pelear(Pikinim aPikinim, Pikinim cPikinim, Pikinim mPikinim){
+
+        return false;
+    }
+    void Interactuar(Pikinim aPikinim, Pikinim cPikinim, Pikinim mPikinim){}
 }
