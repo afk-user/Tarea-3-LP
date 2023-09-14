@@ -5,7 +5,7 @@ class Muralla extends Zona {
         this.vida = health;
     }
 
-    boolean TryRomper(Pikinim aPikinim, Pikinim cPikinim, Pikinim mPikinim){
+    boolean TryRomper(Pikinim yellow,Pikinim cyan, Pikinim magenta){
         return false;
     }
 }

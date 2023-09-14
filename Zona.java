@@ -1,11 +1,8 @@
-interface ILevantable {
-    void Levantar(Pikinim yel_pik,Pikinim cyan_pik,Pikinim mag_pik);
-}
-
 class Zona {
     protected boolean usado;
 
-    void Interactuar(Pikinim yel_pik,Pikinim cyan_pik,Pikinim mag_pik){
+    void Interactuar(Pikinim yellow,Pikinim cyan, Pikinim magenta){
+        System.out.println("No queda nada más que hacer aquí...");
         return;
     }
 }
