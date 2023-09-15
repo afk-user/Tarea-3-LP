@@ -1,8 +1,11 @@
-//import java.util.Scanner;
+import java.util.Scanner;
 
 class Juego {
     static public void main(String[] args){
+        int turn = 1;
         int pos = 5;
+        boolean exit = false;
+        String zone;
         Zona zone_array[] = new Zona[11];
         
         Pieza piece1 = new Pieza(50);
@@ -43,37 +46,70 @@ class Juego {
         Cyan cyan_pikinim = new Cyan(10);
         Magenta magenta_pikinim = new Magenta(10);
 
-        while(true){ // za game loop
+        zone = String.valueOf(zone_array[pos].getClass());
+        while(!exit){ // za game loop
             // plantilla de prueba
-            String zone = String.valueOf(zone_array[pos].getClass());
-            zone = zone.substring(6,zone.length());
 
-            System.out.println("Turno 1: " + yellow_pikinim.get_quan() + " Amarillos, " + cyan_pikinim.get_quan() + " Cians, " + magenta_pikinim.get_quan() + " Magentas.\n");
-            System.out.println("Zona Actual: " + zone +"\nOpciones:\n1.Ir a derecha  2.Ir a izquierda  3.Quedarse aquí");
+            System.out.println("Turno " + turn + ": " + yellow_pikinim.get_quan() + " Amarillos, " + cyan_pikinim.get_quan() + " Cians, " + magenta_pikinim.get_quan() + " Magentas.\n");
+            System.out.println("Zona Actual: " + zone.substring(6,zone.length()) +"\nOpciones:\n1.Ir a derecha  2.Ir a izquierda  3.Quedarse aquí\n");
 
-            //Scanner scanner = new Scanner(System.in);
-            //System.out.println("input: ");
-            //String input = scanner.nextLine();
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Input: ");
+            String input = scanner.nextLine();
+            switch (input){
+                case "1":
+                if(pos<zone_array.length-1){
+                        pos++;
+                    } else {
+                        System.out.println("Can't go any further");
+                    }
+                    break;
+                case "2":
+                    if(pos>0){
+                        pos--;
+                    } else {
+                        System.out.println("Can't go any further");
+                    }
+                    break;
+                case "3":
+                    break;
+                default:
+                System.out.println("Not a valid input");
+            }
+            zone = String.valueOf(zone_array[pos].getClass());
 
-            switch (zone) {
+            switch (zone.substring(6,zone.length())){
                 case "Muralla":
-                    System.out.println("Muro de Berlin");
+                    System.out.println(((Muralla)zone_array[pos]).get_hp());
                     break;
                 case "Pildora":
-                    System.out.println("Pildora roja o pildora azul?");
+                    System.out.println(((Pildora)zone_array[pos]).get_quan());
                     break;
                 case "Pieza":
-                    System.out.println("Encerrado en una pieza de goma");
+                    System.out.println(((Pieza)zone_array[pos]).get_weight());
                     break;
                 case "Enemigo":
-                    System.out.println("I need more bullets");
+                    System.out.println(((Enemigo)zone_array[pos]).get_hp()+"\n"+((Enemigo)zone_array[pos]).get_weight()+"\n"+((Enemigo)zone_array[pos]).get_dmg(pos));
                     break;
                 default:
                     System.out.println("Not a valid Zone");
                     break;
             }
-            //scanner.close();
-            break;
+
+            System.out.println("Exit? y/n");
+            input = scanner.nextLine();
+            switch (input){
+                case "y":
+                    exit = true;
+                    scanner.close();
+                    break;
+                case "n":
+                    break;
+                default:
+                    System.out.println("Not a valid input");
+                    break;
+            }
+            turn++;
         }
         return;
     }

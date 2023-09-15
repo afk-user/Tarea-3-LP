@@ -5,22 +5,22 @@ abstract class Pikinim {
 
     // getters & setters
     void set_dmg(int damage){
-        this.ataque = damage;
+        ataque = damage;
     }
     int get_dmg(){
-        return this.ataque;
+        return ataque;
     }
     void set_cap(int capacity){
-        this.capacidad = capacity;
+        capacidad = capacity;
     }
     int get_cap(){
-        return this.capacidad;
+        return capacidad;
     }
     void set_quan(int quantity){
-        this.cantidad = quantity;
+        cantidad = quantity;
     }
     int get_quan(){
-        return this.cantidad;
+        return cantidad;
     }
 
     void disminuir(int cantidad){

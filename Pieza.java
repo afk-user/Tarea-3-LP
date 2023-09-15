@@ -1,11 +1,14 @@
 class Pieza extends Zona implements ILevantable {
     private int peso;
-
-    Pieza(int weight){
-        this.peso = weight;
+    
+    void set_weight(int weight){
+        peso = weight;
     }
     int get_weight(){
-        return this.peso;
+        return peso;
+    }
+    Pieza(int weight){
+        set_weight(weight);
     }
 
     public void Levantar(Pikinim yellow,Pikinim cyan, Pikinim magenta){
