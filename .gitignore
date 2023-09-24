@@ -1,2 +1,5 @@
 # Ignore all .class files
 *.class
+
+# Ignore the .tar.gz
+*.tar.gz
