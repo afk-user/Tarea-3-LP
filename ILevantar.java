@@ -1,5 +1,5 @@
 /*
- * @(#)ILevantar.java       2.04 24 Sep 2023
+ * @(#)ILevantar.java       2.05
  * 
  * Copyright (c) 2023 Javier Matamala.
  * Todos los derechos reservados.
@@ -7,7 +7,7 @@
 
 /**
  * Interfaz encargada de entregar la funcion ILevantable a las subclases Zona::Enemigo y Zona::Pieza
- * @version 2.04 24 Sep 2023
+ * @version 2.05
  * @author Javier Matamala */
 interface ILevantable {
     /**

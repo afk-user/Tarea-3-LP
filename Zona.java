@@ -1,12 +1,12 @@
 /*
- * @(#)Zona.java            2.04 24 Sep 2023
+ * @(#)Zona.java            2.05
  * 
  * Copyright (c) 2023 Javier Matamala.
  * Todos los derechos reservados.
 */
 
 /**
- * @version 2.04 24 Sep 2023
+ * @version 2.05
  * @author Javier Matamala */
 class Zona {
     private boolean completada = false;

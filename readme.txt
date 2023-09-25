@@ -1,8 +1,8 @@
 Nombre: Javier Matamala
 Rol: 202273560-0
 
-Versión 2.04 24 Sep 2023
-Compilado con javac 11.0.20.1 desde WSL Ubuntu 22.042.04 24 Sep 2023
+Versión 2.05
+Compilado con javac 11.0.20.1 desde WSL Ubuntu 22.04
  
 Copyright (c) 2023 Javier Matamala.
 Todos los derechos reservados.

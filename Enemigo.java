@@ -1,5 +1,5 @@
 /*
- * @(#)Enemigo.java         2.04 24 Sep 2023
+ * @(#)Enemigo.java         2.05
  * 
  * Copyright (c) 2023 Javier Matamala.
  * Todos los derechos reservados.
@@ -10,7 +10,7 @@ import java.util.Scanner;
 /**
  * Zona donde se encuentra un enemigo.
  * La clase contiene el código para el correcto funcionamiento de la zona.
- * @version 2.04 24 Sep 2023
+ * @version 2.05
  * @author Javier Matamala */
 class Enemigo extends Zona implements ILevantable {
     private int vida;

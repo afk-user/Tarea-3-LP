@@ -1,5 +1,5 @@
 /*
- * @(#)Pikinim.java 2.04 24 Sep 2023
+ * @(#)Pikinim.java 2.05
  * 
  * Copyright (c) 2023 Javier Matamala.
  * Todos los derechos reservados.
@@ -8,7 +8,7 @@
 /**
  * Clase abstracta que incluye las variables ataque, capacidad, cantidad, y las funciónes disminuir y multiplicar.<p>
  * Representa la "raza" de los Pikinim, debido a que las subclases heredan todas las propiedades.
- * @version 2.04 24 Sep 2023
+ * @version 2.05
  * @author Javier Matamala */
 abstract class Pikinim {
     private int ataque;

@@ -1,5 +1,5 @@
 /*
- * @(#)Juego.java           2.04 24 Sep 2023
+ * @(#)Juego.java           2.05
  * 
  * Copyright (c) 2023 Javier Matamala.
  * Todos los derechos reservados.
@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 /**
  * La clase principal, encargada de sostener la función main para ejecutar todo el programa.
- * @version 2.04 24 Sep 2023
+ * @version 2.05
  * @author Javier Matamala */
 class Juego {
     static public void main(String[] args){

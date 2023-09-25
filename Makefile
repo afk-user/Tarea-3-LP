@@ -1,6 +1,5 @@
 main: Amarillo.java Cyan.java Enemigo.java ILevantar.java Juego.java Magenta.java Muralla.java Pieza.java Pikinim.java Pildora.java Zona.java
-	javac ILevantar.java
-	javac Juego.java
+	javac *.java
 
 delete: Amarillo.class Cyan.class Enemigo.class ILevantable.class Juego.class Magenta.class Muralla.class Pieza.class Pikinim.class Pildora.class Zona.class
 	rm *.class
