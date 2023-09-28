@@ -81,7 +81,7 @@ class Muralla extends Zona {
         super.Interactuar(yellow, cyan, magenta);
     }
 
-    void flavor_text(){
+    static void flavor_text(){
         String flavor[] = {"Lomiar se acerca a la muralla, pero la muralla ni se inmuta.",
         "Lomiar se acerca a la muralla a observarla más de cerca. Por un momento, pareciera que la muralla lo observa.",
         "Oh, te acercas al muro? En vez de rodearlo, vas directo a él? Lomiar no puede destruir la muralla sin acercarse más a esta.",

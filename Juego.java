@@ -69,7 +69,7 @@ class Juego {
                 case "1":
                     if(zone_array[pos] instanceof Muralla && lastpos != posleft && !zone_array[pos].get_status()){
                         if(zone_array[pos] instanceof Muralla && !zone_array[pos].get_status())
-                            ((Muralla)zone_array[pos]).flavor_text();
+                            Muralla.flavor_text();
                         valid_zone = false;
                     } else {
                         lastpos = pos--;
@@ -81,7 +81,7 @@ class Juego {
                 case "3":
                     if(zone_array[pos] instanceof Muralla && lastpos != posright && !zone_array[pos].get_status()){
                         if(zone_array[pos] instanceof Muralla && !zone_array[pos].get_status())
-                            ((Muralla)zone_array[pos]).flavor_text();
+                            Muralla.flavor_text();
                         valid_zone = false;
                     } else {
                         lastpos = pos++;
