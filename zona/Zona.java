@@ -1,21 +1,22 @@
 /*
- * @(#)Zona.java            2.05
+ * @(#)Zona.java            2.06
  * 
  * Copyright (c) 2023 Javier Matamala.
  * Todos los derechos reservados.
 */
-
+package zona;
+import pikinim.*;
 /**
- * @version 2.05
+ * @version 2.06
  * @author Javier Matamala */
-class Zona {
+public class Zona {
     private boolean completada = false;
 
     /**
      * Setter del marcador de completación de la zona.
      * @param status : El valor a asignar a la completación.
      */
-    void set_status(boolean status){
+    public void set_status(boolean status){
         completada = status;
         return;
     }
@@ -23,7 +24,7 @@ class Zona {
      * Getter del marcador de completación de la zona.
      * @return boolean : Retorna el valor que de completación de la zona.
      */
-    boolean get_status(){
+    public boolean get_status(){
         return completada;
     }
     /**
@@ -33,7 +34,7 @@ class Zona {
      * @param cyan : recibe un objeto de subclase Pikinim::Cyan
      * @param magenta : recibe un objeto de subclase Pikinim::Magenta
      */
-    void Interactuar(Pikinim yellow, Pikinim cyan, Pikinim magenta){
+    public void Interactuar(Pikinim yellow, Pikinim cyan, Pikinim magenta){
         System.out.println("No queda nada más que hacer aquí...");
         return;
     }
@@ -43,5 +44,5 @@ class Zona {
      * @param yellow : recibe un objeto de subclase Pikinim::Amarillo
      * @param cyan : recibe un objeto de subclase Pikinim::Cyan
      * @param magenta : recibe un objeto de subclase Pikinim::Magenta */
-    void soupact(Pikinim yellow, Pikinim cyan, Pikinim magenta){}
+    public void soupact(Pikinim yellow, Pikinim cyan, Pikinim magenta){}
 }

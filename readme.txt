@@ -1,7 +1,7 @@
 Nombre: Javier Matamala
 Rol: 202273560-0
 
-Versión 2.05
+Versión 2.06 del programa
 Compilado con javac 11.0.20.1 desde WSL Ubuntu 22.04
  
 Copyright (c) 2023 Javier Matamala.
@@ -11,9 +11,11 @@ Todos los derechos reservados.
 Instrucciones de Compilación:
 - Extraer todos los archivos que se encuentran en el .tar.gz que se entrega en un directorio vacío.
 - En el directorio recién creado, abrir una terminal que sea capaz de ejecutar javac y make.
+- Los archivos pertinentes a los pikinim se encuentran en la carpeta pikinim,
+  y los archivos pertinentes a las zonas se encuentran en la carpeta zona.
 - Para compilar todos los archivos, escribir en la terminal 'make main'.
 - Una vez compilados todos los archivos, se ejecuta el juego escribiendo 'java Juego'.
-- Para borrar los archivos .class se puede ejecutar el comando 'make delete' (usado para testear).
+- Para borrar los archivos .class se puede ejecutar el comando 'make clear' (usado para testear).
 
 Como jugar:
 Controlas al astronauta Lomiar, un Capitán espacial que quedó varado en un planeta sin nombre, a recuperar las 3 piezas de su nave.

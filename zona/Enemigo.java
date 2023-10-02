@@ -1,18 +1,19 @@
 /*
- * @(#)Enemigo.java         2.05
+ * @(#)Enemigo.java         2.06
  * 
  * Copyright (c) 2023 Javier Matamala.
  * Todos los derechos reservados.
 */
+package zona;
+import pikinim.*;
 import java.lang.Math;
 import java.util.Scanner;
-
 /**
  * Zona donde se encuentra un enemigo.
  * La clase contiene el código para el correcto funcionamiento de la zona.
- * @version 2.05
+ * @version 2.06
  * @author Javier Matamala */
-class Enemigo extends Zona implements ILevantable {
+public class Enemigo extends Zona implements ILevantable {
     private int vida;
     private int peso;
     private int ataque;
@@ -21,37 +22,37 @@ class Enemigo extends Zona implements ILevantable {
     /**
      * Setter de vida de un objeto tipo Enemigo.
      * @param health : Recibe la vida a establecer.*/
-    void set_hp(int health){
+    public void set_hp(int health){
         vida = health;
     }
     /**
      * Getter de vida de un objeto tipo Enemigo.
      * @return int : Retorna la vida del enemigo.*/
-    int get_hp(){
+    public int get_hp(){
         return vida;
     }
     /**
      * Setter de peso de un objeto tipo Enemigo.
      * @param weight : Recibe el peso a establecer.*/
-    void set_weight(int weight){
+    public void set_weight(int weight){
         peso = weight;
     }
     /**
      * Getter de peso de un objeto tipo Enemigo.
      * @return int : Retorna el peso del enemigo.*/
-    int get_weight(){
+    public int get_weight(){
         return peso;
     }
     /**
      * Setter de ataque de un objeto tipo Enemigo.
      * @param damage : Recibe el ataque a establecer.*/
-    void set_dmg(int damage){
+    public void set_dmg(int damage){
         ataque = damage;
     }
     /**
      * Getter de ataque de un objeto tipo Enemigo.
      * @return int : Retorna el ataque del enemigo.*/
-    int get_dmg(){
+    public int get_dmg(){
         return ataque;
     }
 
@@ -62,7 +63,7 @@ class Enemigo extends Zona implements ILevantable {
      * @param weight : Ingresa el stat de peso del enemigo.
      * @param damage : Ingresa el stat de ataque del enemigo.
      */
-    Enemigo(int health, int weight, int damage){
+    public Enemigo(int health, int weight, int damage){
         set_hp(health);
         set_weight(weight);
         set_dmg(damage);
@@ -147,7 +148,7 @@ class Enemigo extends Zona implements ILevantable {
      * @param yellow : recibe un objeto de subclase Pikinim::Amarillo
      * @param cyan : recibe un objeto de subclase Pikinim::Cyan
      * @param magenta : recibe un objeto de subclase Pikinim::Magenta */
-    void Interactuar(Pikinim yellow, Pikinim cyan, Pikinim magenta){
+    public void Interactuar(Pikinim yellow, Pikinim cyan, Pikinim magenta){
 
         System.out.println("El Capitán nota que a medida que avanza, la tierra tiembla más y más.\n"+
             "Lo que antes parecía un champiñón ahora parece una bestia con dos antenas que parecieran sostener sus ojos.\n"+
@@ -171,7 +172,7 @@ class Enemigo extends Zona implements ILevantable {
      * @param yellow : recibe un objeto de subclase Pikinim::Amarillo
      * @param cyan : recibe un objeto de subclase Pikinim::Cyan
      * @param magenta : recibe un objeto de subclase Pikinim::Magenta */
-    void soupact(Pikinim yellow, Pikinim cyan, Pikinim magenta){
+    public void soupact(Pikinim yellow, Pikinim cyan, Pikinim magenta){
         super.Interactuar(yellow, cyan, magenta);
     }
 }

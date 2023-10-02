@@ -1,17 +1,18 @@
 /*
- * @(#)Muralla.java         2.05
+ * @(#)Muralla.java         2.06
  * 
  * Copyright (c) 2023 Javier Matamala.
  * Todos los derechos reservados.
 */
+package zona;
+import pikinim.*;
 import java.lang.Math;
-
 /**
  * Zona que impide el paso mientras el atributo vida sea mayor a 0.
  * La clase contiene el código para el correcto funcionamiento de la zona.
- * @version 2.05
+ * @version 2.06
  * @author Javier Matamala */
-class Muralla extends Zona {
+public class Muralla extends Zona {
     private int vida;
     
     /**
@@ -33,7 +34,7 @@ class Muralla extends Zona {
      * Constructor de la clase Muralla.
      * @param health : Establece el stat de vida de la muralla.
      */
-    Muralla(int health){
+    public Muralla(int health){
         set_hp(health);
     }
 
@@ -50,7 +51,7 @@ class Muralla extends Zona {
         set_hp(get_hp() - pikinim_dmg);
         if(get_hp() <= 0){
             set_hp(0);
-            System.out.println("La mano de obra de los pikinim surte efecto y logran derribar la muralla con éxito. Lomiar finalmente puede pasar esta zona-");
+            System.out.println("La mano de obra de los pikinim surte efecto y logran derribar la muralla con éxito. Lomiar finalmente puede pasar esta zona.");
             return true;
         }
         System.out.println("Los pikinim no logran derribar la muralla, pero se ve que al menos le hicieron daño.");
@@ -63,7 +64,7 @@ class Muralla extends Zona {
      * @param cyan : Recibe un objeto de subclase Pikinim::Cyan
      * @param magenta : Recibe un objeto de subclase Pikinim::Magenta
      */
-    void Interactuar(Pikinim yellow, Pikinim cyan, Pikinim magenta){
+    public void Interactuar(Pikinim yellow, Pikinim cyan, Pikinim magenta){
 
         System.out.println("Una gran muralla tapa el camino del Capitán Lomiar. Sin ningún camino que pueda rodear la muralla, lo mejor sería destruirla antes de continuar.\n"+
             "Tras analizar el muro, Lomiar encontró la siguiente estadística:\n\nVida: "+get_hp()+"\n");
@@ -77,11 +78,11 @@ class Muralla extends Zona {
      * @param yellow : Recibe un objeto de subclase Pikinim::Amarillo
      * @param cyan : Recibe un objeto de subclase Pikinim::Cyan
      * @param magenta : Recibe un objeto de subclase Pikinim::Magenta */
-    void soupact(Pikinim yellow, Pikinim cyan, Pikinim magenta){
+    public void soupact(Pikinim yellow, Pikinim cyan, Pikinim magenta){
         super.Interactuar(yellow, cyan, magenta);
     }
 
-    void flavor_text(){
+    public static void flavor_text(){
         String flavor[] = {"Lomiar se acerca a la muralla, pero la muralla ni se inmuta.",
         "Lomiar se acerca a la muralla a observarla más de cerca. Por un momento, pareciera que la muralla lo observa.",
         "Oh, te acercas al muro? En vez de rodearlo, vas directo a él? Lomiar no puede destruir la muralla sin acercarse más a esta.",

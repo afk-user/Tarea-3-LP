@@ -1,13 +1,14 @@
 /*
- * @(#)ILevantar.java       2.05
+ * @(#)ILevantar.java       2.06
  * 
  * Copyright (c) 2023 Javier Matamala.
  * Todos los derechos reservados.
 */
-
+package zona;
+import pikinim.*;
 /**
  * Interfaz encargada de entregar la funcion ILevantable a las subclases Zona::Enemigo y Zona::Pieza
- * @version 2.05
+ * @version 2.06
  * @author Javier Matamala */
 interface ILevantable {
     /**
