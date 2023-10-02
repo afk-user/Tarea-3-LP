@@ -1,14 +1,16 @@
 /*
- * @(#)Juego.java           2.05
+ * @(#)Juego.java           2.06
  * 
  * Copyright (c) 2023 Javier Matamala.
  * Todos los derechos reservados.
 */
+import pikinim.*;
+import zona.*;
 import java.util.Scanner;
 
 /**
  * La clase principal, encargada de sostener la función main para ejecutar todo el programa.
- * @version 2.05
+ * @version 2.06
  * @author Javier Matamala */
 class Juego {
     static public void main(String[] args){
@@ -60,8 +62,8 @@ class Juego {
             valid_zone = true;
 
             System.out.println("Turno " + turn + ": " + yellow_pikinim.get_quan() + " Amarillos, " + cyan_pikinim.get_quan() + " Cians, " + magenta_pikinim.get_quan() + " Magentas.\n");
-            System.out.println("Zona Actual: " + zone.substring(6,zone.length()) +"\nPiezas Restantes: "+ pieces_left +
-            "\nOpciones:\n1.Ir a izquierda ("+ zone_left.substring(6,zone_left.length()) +")  2.Quedarse aquí  3.Ir a derecha ("+ zone_right.substring(6,zone_right.length()) +")\n");
+            System.out.println("Zona Actual: " + zone.substring(11,zone.length()) +"\nPiezas Restantes: "+ pieces_left +
+            "\nOpciones:\n1.Ir a izquierda ("+ zone_left.substring(11,zone_left.length()) +")  2.Quedarse aquí  3.Ir a derecha ("+ zone_right.substring(11,zone_right.length()) +")\n");
             System.out.print("Input: ");
             String input = scanner.nextLine();
             System.out.println();

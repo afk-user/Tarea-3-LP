@@ -1,17 +1,18 @@
 /*
- * @(#)Pildora.java         2.05
+ * @(#)Pildora.java         2.06
  * 
  * Copyright (c) 2023 Javier Matamala.
  * Todos los derechos reservados.
 */
+package zona;
+import pikinim.*;
 import java.util.Scanner;
-
 /**
  * Zona que aumenta la cantidad de un tipo de Pikinim.
  * La clase contiene el código para el correcto funcionamiento de la zona.
- * @version 2.05
+ * @version 2.06
  * @author Javier Matamala */
-class Pildora extends Zona {
+public class Pildora extends Zona {
     private int cantidad;
     private Scanner scanner = new Scanner(System.in);
 
@@ -33,7 +34,7 @@ class Pildora extends Zona {
      * Constructor de la clase Pildora.
      * @param quantity : Establece el stat de cantidad de pildoras.
      */
-    Pildora(int quantity){
+    public Pildora(int quantity){
         set_quan(quantity);
     }
     /**
@@ -43,7 +44,7 @@ class Pildora extends Zona {
      * @param cyan : Recibe un objeto de subclase Pikinim::Cyan
      * @param magenta : Recibe un objeto de subclase Pikinim::Magenta
      */
-    void Interactuar(Pikinim yellow, Pikinim cyan, Pikinim magenta){
+    public void Interactuar(Pikinim yellow, Pikinim cyan, Pikinim magenta){
         
         System.out.println("Después de mucho caminar, Lomiar se encuentra en un campo de flores cuyos pistilos parecen píldoras.\n"+
             "Los pikinim, atraidos por estas flores, hacen que se caigan los pistilos y se los llevan a Lomiar.\n"+
@@ -79,7 +80,7 @@ class Pildora extends Zona {
      * @param yellow : recibe un objeto de subclase Pikinim::Amarillo
      * @param cyan : recibe un objeto de subclase Pikinim::Cyan
      * @param magenta : recibe un objeto de subclase Pikinim::Magenta */
-    void soupact(Pikinim yellow, Pikinim cyan, Pikinim magenta){
+    public void soupact(Pikinim yellow, Pikinim cyan, Pikinim magenta){
         super.Interactuar(yellow, cyan, magenta);
     }
 }

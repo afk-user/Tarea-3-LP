@@ -1,16 +1,17 @@
 /*
- * @(#)Pieza.java           2.05
+ * @(#)Pieza.java           2.06
  * 
  * Copyright (c) 2023 Javier Matamala.
  * Todos los derechos reservados.
 */
-
+package zona;
+import pikinim.*;
 /**
  * Zona donde se encuentra una pieza de la nave.
  * La clase contiene el código para el correcto funcionamiento de la zona.
- * @version 2.05
+ * @version 2.06
  * @author Javier Matamala */
-class Pieza extends Zona implements ILevantable {
+public class Pieza extends Zona implements ILevantable {
     private int peso;
     
     /**
@@ -31,7 +32,7 @@ class Pieza extends Zona implements ILevantable {
      * Constructor de la clase Pieza.
      * @param weight : Ingresa el stat de peso de la Pieza.
      */
-    Pieza(int weight){
+    public Pieza(int weight){
         set_weight(weight);
     }
 
@@ -53,7 +54,7 @@ class Pieza extends Zona implements ILevantable {
      * @param cyan : recibe un objeto de subclase Pikinim::Cyan
      * @param magenta : recibe un objeto de subclase Pikinim::Magenta
      */
-    void Interactuar(Pikinim yellow, Pikinim cyan, Pikinim magenta){
+    public void Interactuar(Pikinim yellow, Pikinim cyan, Pikinim magenta){
 
         System.out.println("Lomiar se encuentra frente a frente con una de las magnificientes piezas que componen su nave.\n"+
             "Él y los Pikinim cruzan miradas, ambos sabiendo que recolectar estos preciados fragmentos pueden asegurar su supervivencia.\n"+
@@ -72,7 +73,7 @@ class Pieza extends Zona implements ILevantable {
      * @param yellow : recibe un objeto de subclase Pikinim::Amarillo
      * @param cyan : recibe un objeto de subclase Pikinim::Cyan
      * @param magenta : recibe un objeto de subclase Pikinim::Magenta */
-    void soupact(Pikinim yellow, Pikinim cyan, Pikinim magenta){
+    public void soupact(Pikinim yellow, Pikinim cyan, Pikinim magenta){
         super.Interactuar(yellow, cyan, magenta);
     }
 }
